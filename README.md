@@ -55,6 +55,8 @@ These are just a bunch of wallpapers I've found on the internet
 ---
 <a href='./foggy_window.jpg'><img src='./foggy_window.jpg' alt='foggy_window'></a>
 ---
+<a href='./henriette_ronner-knip-kittens_at_play-1900-obelisk-art-history-1.jpg'><img src='./henriette_ronner-knip-kittens_at_play-1900-obelisk-art-history-1.jpg' alt='henriette_ronner-knip-kittens_at_play-1900-obelisk-art-history-1'></a>
+---
 <a href='./in rainbows_themed_catppuccin-frappe.jpg'><img src='./in rainbows_themed_catppuccin-frappe.jpg' alt='in rainbows_themed_catppuccin-frappe'></a>
 ---
 <a href='./interstellar.jpg'><img src='./interstellar.jpg' alt='interstellar'></a>
