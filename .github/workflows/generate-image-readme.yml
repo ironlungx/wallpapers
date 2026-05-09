@@ -1,0 +1,44 @@
+name: Generate README
+
+on:
+  push:
+    paths:
+      - '*.png'
+      - '*.jpg'
+      - '*.jpeg'
+      - '*.gif'
+      - '*.svg'
+      - '*.webp'
+  workflow_dispatch:
+
+jobs:
+  generate-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate README.md for wallpapers
+        run: |
+          set -e
+          echo "# Wallpaper collection" > README.md
+          echo "These are just a bunch of wallpapers I've found on the internet" >> README.md
+
+          for img in *.png *.jpg *.jpeg *.gif *.svg *.webp; do
+            if [ -f "$img" ]; then
+              name="${img%.*}"
+              echo "---" >> README.md
+              echo "<a href='./$img'><img src='./$img' alt='$name'></a>" >> README.md
+            fi
+          done
+
+      - name: Commit and push changes
+        run: |
+          set -e
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "auto-generate README.md with wallpapers"
+            git push
+          fi
