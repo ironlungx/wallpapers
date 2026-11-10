@@ -25,6 +25,8 @@ These are just a bunch of wallpapers I've found on the internet
 ---
 <a href='./m.png'><img src='./m.png' alt='m'></a>
 ---
+<a href='./minifreak.png'><img src='./minifreak.png' alt='minifreak'></a>
+---
 <a href='./romb.png'><img src='./romb.png' alt='romb'></a>
 ---
 <a href='./space.png'><img src='./space.png' alt='space'></a>
